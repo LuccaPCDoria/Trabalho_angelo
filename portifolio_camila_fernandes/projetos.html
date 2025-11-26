@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos | Camila Coutinho</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo_camilla.svg" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- HEADER reaproveitado do index -->
+<header class="header">
+    <nav class="container nav">
+
+        <h1 class="logo">Camila Coutinho</h1>
+
+        <!-- Toggle do menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <!-- Ícone hamburguer -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Menu -->
+        <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html" class="ativo">Projetos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main style="background: linear-gradient(to bottom, var(--cor-gradiente-topo), var(--cor-gradiente-base));
+    ">
+
+    <!-- APRESENTAÇÃO DA PÁGINA -->
+    <section class="hero-projetos">
+        <div class="container">
+            <h2 class="titulo-secao">Projetos Desenvolvidos</h2>
+            <p class="sub-secao">
+                Aqui você encontra o projeto completo desenvolvido por mim, incluindo renderizações 
+                realistas e plantas técnicas detalhadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJETO LOFT -->
+    <section class="lista-projetos" style="padding: 20px 0;">
+        <div class="container">
+            <h3 class="titulo-secao" style="margin-bottom: var(--sp-md);">Projeto Loft</h3>
+
+            <div class="grid-projetos">
+                <!-- Card único do Loft -->
+                <a href="./projetos/projeto1.html" class="card-projeto">
+                    <img src="img/Projeto Loft 1.jpg" alt="Projeto Loft - Capa" />
+                    <div class="card-projeto-info" style="margin-top: 20px;">
+                        <h3>Projeto Loft</h3>
+                        <p>
+                            Renderizações realistas e ambientação elegante, explorando iluminação, texturas
+                            e composição contemporânea.
+                        </p>
+                        <span class="btn-projeto">Ver detalhes</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA DE ÂNGULOS DO LOFT -->
+    <section class="galeria">
+        <div class="container">
+            <h3 class="titulo-secao" style="margin-bottom: var(--sp-md);">Ângulos do Projeto</h3>
+
+            <div class="grid-projetos-home">
+                <img src="img/Projeto Loft 1.jpg" alt="Render Loft 1">
+                <img src="img/Projeto Loft 2.jpg" alt="Render Loft 2">
+                <img src="img/Projeto Loft 3.jpg" alt="Render Loft 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- PLANTAS TÉCNICAS -->
+    <section class="plantas" style="border: none;">
+        <div class="container">
+            <h3 class="titulo-secao">Plantas Técnicas</h3>
+
+            <p style="margin-bottom: var(--sp-md);">
+                As plantas foram elaboradas para garantir precisão no layout, circulação e distribuição dos ambientes.
+            </p>
+
+            <div class="grid-plantas">
+                <img src="img/Planta Técnica 1.jpg" alt="Planta Técnica 1">
+                <img src="img/Planta Técnica 2.jpg" alt="Planta Técnica 2">
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER reaproveitado do index -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2025 — Portfólio desenvolvido por Lucca Prisco para Camila Coutinho</p>
+    </div>
+</footer>
+
+</body>
+</html>
