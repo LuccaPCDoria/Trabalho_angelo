@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayara Santos - Design de Interiores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__container">
+                <div class="nav__logo">
+                    <h1>Mayara Santos</h1>
+                    <span>Design de Interiores</span>
+                </div>
+                <ul class="nav__menu">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#projetos" class="nav__link">Projetos</a></li>
+                    <li><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+                <div class="nav__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h2 class="hero__title">Transformando espaços com elegância e funcionalidade</h2>
+                    <p class="hero__subtitle">Design de Interiores personalizado que reflete sua personalidade e estilo de vida</p>
+                    <a href="#projetos" class="btn btn--outline">Ver Projetos</a>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__placeholder">
+                      <img src="img/177A1136.jpeg" alt="Foto de Mayara Santos">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre__container">
+                <div class="sobre__content">
+                    <h2 class="section__title">Sobre Mayara</h2>
+                    <div class="sobre__text">
+                        <p>Cursando o 3º Período em Design de Interiores, Mayara Santos busca transformar espaços com elegância e funcionalidade.</p>
+                        
+                        <p>Mayara tem 22 anos, é Cristã e uma garota sonhadora. Ela gosta de passar o tempo fazendo coisas agradáveis: um passeio ao ar livre, pedalar, fotografar, ler, cozinhar. Gosta de animais e é muito empática, gentil e doce.</p>
+                        
+                        <p>Seu foco está em trazer sua personalidade para sua vida profissional para idealizar projetos personalizados, desde residenciais até comerciais, unindo harmonia, estética e praticidade.</p>
+                    </div>
+                    
+                    <div class="sobre__skills">
+                        <h3 class="sobre__skills-title">Hard Skills</h3>
+                        <div class="skills__list">
+                            <span class="skill-tag">Comunicação</span>
+                            <span class="skill-tag">Empatia</span>
+                            <span class="skill-tag">Criatividade</span>
+                            <span class="skill-tag">Trabalho em equipe</span>
+                            <span class="skill-tag">Arte</span>
+                            <span class="skill-tag">Cinema</span>
+                            <span class="skill-tag">Música</span>
+                        </div>
+                        
+                        <h3 class="sobre__skills-title">Softwares</h3>
+                        <div class="skills__list">
+                            <span class="skill-tag">SketchUp</span>
+                            <span class="skill-tag">AutoCAD</span>
+                            <span class="skill-tag">Promob</span>
+                            <span class="skill-tag">Revit</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre__image">
+                    <div class="sobre__placeholder">
+                        <img data-src="img/segundafoto.jpeg" alt="Mayara Santos - foto 2" class="sobre__photo lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="projetos__container">
+                <h2 class="section__title">Projetos</h2>
+                <p class="section__subtitle">Conheça alguns dos projetos desenvolvidos por Mayara</p>
+                
+                <div class="projetos__grid">
+                    <article class="projeto-card">
+                        <div class="projeto-card__image">
+                            <div class="projeto-card__placeholder">
+                                <i class="fas fa-home"></i>
+                                <p>Projeto Residencial</p>
+                            </div>
+                        </div>
+                        <div class="projeto-card__content">
+                            <h3 class="projeto-card__title">Casa Cotiporã</h3>
+                            <p class="projeto-card__desc">Residência Unifamiliar - Neste trabalho foi utilizado o software Revit para modelar toda a casa, desde a topografia até a cobertura.</p>
+                            <a href="#detalhe-casa-cotipora" class="btn btn--outline">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <article class="projeto-card">
+                        <div class="projeto-card__image">
+                            <div class="projeto-card__placeholder">
+                                <i class="fas fa-building"></i>
+                                <p>Escritório</p>
+                            </div>
+                        </div>
+                        <div class="projeto-card__content">
+                            <h3 class="projeto-card__title">Interiores Escritório</h3>
+                            <p class="projeto-card__desc">Imagem renderizada de um ambiente de trabalho, onde foi utilizado o software Sketchup, layout planejado para duas estações de trabalho.</p>
+                            <a href="#detalhe-interiores-escritorio" class="btn btn--outline">Ver Detalhes</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="detalhes-projetos" class="detalhes-projetos">
+            <div class="detalhes-projetos__container">
+                <h2 class="section__title">Detalhes dos Projetos</h2>
+                
+                <div id="detalhe-casa-cotipora" class="detalhe-projeto">
+                    <h3>Casa Cotiporã</h3>
+                    <p>Residência Unifamiliar modelada no Revit, incluindo topografia, fundações, estrutura, acabamentos e cobertura. Projeto pensado para integração com o entorno e eficiência energética.</p>
+                    
+                    <div class="carrossel" data-carrossel="casa-cotipora">
+                        <button class="carrossel-btn prev">&#10094;</button>
+                        <div class="carrossel-imagens">
+                            <img src="img/casacotipora1.png" alt="Casa Cotiporã 1" class="carrossel-img active">
+                            <img src="img/casacotipora2.png" alt="Casa Cotiporã 2" class="carrossel-img">
+                            <img src="img/casacotipora3.png" alt="Casa Cotiporã 3" class="carrossel-img">
+                            <img src="img/casacotipora4.png" alt="Casa Cotiporã 4" class="carrossel-img">
+                        </div>
+                        <button class="carrossel-btn next">&#10095;</button>
+                    </div>
+                </div>
+            
+                <div id="detalhe-interiores-escritorio" class="detalhe-projeto">
+                    <h3>Interiores Escritório</h3>
+                    <p>Projeto de interiores para escritório com duas estações de trabalho, planejado no Sketchup. Layout otimizado para produtividade e conforto.</p>
+                    
+                    <div class="carrossel" data-carrossel="interiores-escritorio">
+                        <button class="carrossel-btn prev">&#10094;</button>
+                        <div class="carrossel-imagens">
+                            <img src="img/escritorio1.png" alt="Escritório 1" class="carrossel-img active">
+                            <img src="img/escritorio2.png" alt="Escritório 2" class="carrossel-img">
+                        </div>
+                        <button class="carrossel-btn next">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="contato__container">
+                <h2 class="section__title">Entre em Contato</h2>
+                <p class="section__subtitle">Vamos transformar seu espaço juntos?</p>
+                
+                <div class="contato__content">
+                    <div class="contato__info">
+                        <div class="contato__item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mayara.santos@email.com</p>
+                            </div>
+                        </div>
+                        <div class="contato__item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(00) 00000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contato__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Sua cidade, Estado</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contato__form">
+                        <div class="form__group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" placeholder="Seu email" required>
+                        </div>
+                        <div class="form__group">
+                            <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <h3>Mayara Santos</h3>
+                    <p>Design de Interiores</p>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; Todos os direitos reservados K.R.tech</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
