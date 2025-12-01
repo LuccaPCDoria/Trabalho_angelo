@@ -162,3 +162,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // executar uma vez para inicializar estado
     handleScroll();
 });
+
+document.querySelectorAll('.carrossel').forEach(carrossel => {
+    const imagens = carrossel.querySelectorAll('.carrossel-img');
+    let idx = 0;
+
+    function showImage(i) {
+        imagens.forEach((img, j) => {
+            img.classList.toggle('active', j === i);
+        });
+    }
+
+    carrossel.querySelector('.carrossel-btn.prev').onclick = () => {
+        idx = (idx - 1 + imagens.length) % imagens.length;
+        showImage(idx);
+    };
+    carrossel.querySelector('.carrossel-btn.next').onclick = () => {
+        idx = (idx + 1) % imagens.length;
+        showImage(idx);
+    };
+});
