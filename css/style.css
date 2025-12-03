@@ -95,20 +95,8 @@ img {
 /* ===========================
          HERO REFEITO
 =========================== */
-
 .hero {
-<<<<<<< HEAD
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding: 0 2rem;
-    background: var(--bg);
-}
-
-=======
-    display: flex;
+display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 140px; /* evita que fique por baixo da navbar */
@@ -121,9 +109,6 @@ img {
 
     background: #fafafa;
 }
-
-
->>>>>>> fd7a46a6b2aec87665a44f36535f8ace28cee4d2
 /* Background com gradiente + formas animadas */
 .hero-bg {
     position: absolute;
