@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarto de Casal — Kamila Deysiane</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="shortcut icon" href="img/logo-kamila.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navegacao">
+        <div class="menu-toggle" id="menuToggle" style="color: white;">
+            &#9776;
+        </div>
+
+        <ul class="menu" id="menu">
+            <li><a href="index.html" class="menu-link">Início</a></li>
+            <li><a href="index.html#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="index.html#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="index.html#contatos" class="menu-link">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <header class="cabecalho">
+        <div class="hero-wrap">
+            <img src="img/05.jpg" alt="Quarto de casal elegante" class="hero-img">
+        </div>
+    </header>
+
+    <main class="projeto-container espaçamentozinho">
+        <div class="projeto-grid">
+            <section>
+                <h1>Quarto de Casal</h1>
+                <p>Quarto de casal projetado para conforto e descanso, com paleta suave e iluminação quente. A
+                    composição equilibra cabeceira estofada, texturas e soluções de armazenamento discretas que mantêm o
+                    quarto organizado sem perder a elegância.</p>
+
+                <p>O espaço prioriza um ambiente relaxante: cortinas blackout, iluminação regulável e materiais com
+                    toque macio. Móveis com linhas contemporâneas e acabamentos em madeira clara criam um clima
+                    acolhedor e atemporal.</p>
+
+                <p>Pequenos detalhes — como luzes de leitura embutidas, nichos e roupa de cama coordenada — completam o
+                    projeto, oferecendo funcionalidade sem comprometer o estilo.</p>
+            </section>
+
+            <aside class="detalhes">
+                <h3>Informações rápidas</h3>
+                <ul>
+                    <li><strong>Estilo:</strong> Aconchegante contemporâneo</li>
+                    <li><strong>Elementos:</strong> Cabeceira estofada, armazenamento embutido</li>
+                    <li><strong>Materiais:</strong> Têxteis naturais, madeira clara</li>
+                    <li><strong>Área:</strong> Ex.: 14 m²</li>
+                </ul>
+                <a class="botao-form" href="https://wa.me/5583988531672?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento!">Solicitar orçamento</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-contatos">
+            <div class="rodape-info">
+                <strong>Kamila Deysiane</strong> — Designer de Interiores
+            </div>
+            <div class="rodape-info">
+                <a href="mailto:kamiladeysianedesigner@email.com">kamiladeysianedesigner@email.com</a>
+            </div>
+            <div class="rodape-info">
+                <a href="tel:+5583988531672">(83) 98853-1672</a>
+            </div>
+            <div class="rodape-creditos">
+                Portfólio – Kamila Deysiane
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("show");
+        });
+
+        // Fechar o menu ao clicar em um link
+        document.querySelectorAll(".menu-link").forEach(link => {
+            link.addEventListener("click", () => {
+                menu.classList.remove("show");
+            });
+        });
+    </script>
+</body>
+
+</html>
