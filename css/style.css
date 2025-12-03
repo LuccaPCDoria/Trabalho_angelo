@@ -97,6 +97,17 @@ img {
 =========================== */
 
 .hero {
+<<<<<<< HEAD
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 2rem;
+    background: var(--bg);
+}
+
+=======
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +123,7 @@ img {
 }
 
 
+>>>>>>> fd7a46a6b2aec87665a44f36535f8ace28cee4d2
 /* Background com gradiente + formas animadas */
 .hero-bg {
     position: absolute;
@@ -398,6 +410,8 @@ footer {
         padding-top: 90px;
     }
 }
+<<<<<<< HEAD
+=======
 .navbar {
     position: fixed;
     width: 100%;
@@ -408,3 +422,4 @@ footer {
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
+>>>>>>> fd7a46a6b2aec87665a44f36535f8ace28cee4d2
