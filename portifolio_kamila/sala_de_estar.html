@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Estar — Kamila Deysiane</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="shortcut icon" href="img/logo-kamila.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <nav class="navegacao">
+    <div class="menu-toggle" id="menuToggle" style="color: white;">
+        &#9776;
+    </div>
+
+    <ul class="menu" id="menu">
+        <li><a href="index.html" class="menu-link">Início</a></li>
+        <li><a href="index.html#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="index.html#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="index.html#contatos" class="menu-link">Contatos</a></li>
+    </ul>
+</nav>
+
+    <header class="cabecalho">
+        <div class="hero-wrap">
+            <img src="img/03.jpg" alt="Sala de Estar decorada" class="hero-img">
+        </div>
+    </header>
+
+    <main class="projeto-container espaçamentozinho">
+        <div class="projeto-grid">
+            <section>
+                <h1>Sala de Estar</h1>
+                <p>Projeto de sala de estar que privilegia conforto e equilíbrio visual. A ambientação combina texturas suaves, paleta neutra e pontos de cor pontuais para criar um espaço acolhedor. Mobiliário com proporções pensadas para a circulação e iluminação estratégica elevam a sensação de amplitude.</p>
+
+                <p>O design prioriza áreas de convívio com soluções flexíveis: módulos de armazenamento embutidos, estantes com iluminação e disposição que facilita conversas e entretenimento. Materiais naturais e tecidos de toque agradável garantem aconchego e durabilidade.</p>
+
+                <p>Detalhes como almofadas, tapete e iluminação indireta completam o projeto, proporcionando camadas de textura e calor sem sobrecarregar o ambiente.</p>
+            </section>
+
+            <aside class="detalhes">
+                <h3>Informações rápidas</h3>
+                <ul>
+                    <li><strong>Estilo:</strong> Contemporâneo</li>
+                    <li><strong>Elementos:</strong> Estantes embutidas, iluminação indireta</li>
+                    <li><strong>Materiais:</strong> Tecidos naturais, madeira clara</li>
+                    <li><strong>Área:</strong> Ex.: 16 m²</li>
+                </ul>
+                <a class="botao-form" href="https://wa.me/5583988531672?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento!">Solicitar orçamento</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-contatos">
+            <div class="rodape-info">
+                <strong>Kamila Deysiane</strong> — Designer de Interiores
+            </div>
+            <div class="rodape-info">
+                 <a href="mailto:kamiladeysianedesigner@email.com">kamiladeysianedesigner@email.com</a>
+            </div>
+            <div class="rodape-info">
+                 <a href="tel:+5583988531672">(83) 98853-1672</a>
+            </div>
+            <div class="rodape-creditos">
+                Portfólio – Kamila Deysiane
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+
+    // Fechar o menu ao clicar em um link
+    document.querySelectorAll(".menu-link").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
+        });
+    });
+</script>
+</body>
+</html>

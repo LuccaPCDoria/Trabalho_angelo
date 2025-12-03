@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio – Kamila Deysiane</title>
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="shortcut icon" href="img/logo-kamila.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -12,13 +13,17 @@
 
     <!-- NAVBAR -->
     <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#inicio" class="menu-link">Início</a></li>
-            <li><a href="#sobre" class="menu-link">Sobre</a></li>
-            <li><a href="#projetos" class="menu-link">Projetos</a></li>
-            <li><a href="#contatos" class="menu-link">Contatos</a></li>
-        </ul>
-    </nav>
+    <div class="menu-toggle" id="menuToggle" style="color: white;">
+        &#9776;
+    </div>
+
+    <ul class="menu" id="menu">
+        <li><a href="#inicio" class="menu-link">Início</a></li>
+        <li><a href="#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="#contatos" class="menu-link">Contatos</a></li>
+    </ul>
+</nav>
 
     <!-- CABEÇALHO -->
     <header id="inicio" class="cabecalho">
@@ -28,7 +33,7 @@
     </header>
 
     <!-- SOBRE -->
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre espaçamentozinho">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <p class="sobre-paragrafo">
             Muito prazer! Me chamo Kamila Deysiane, com muito orgulho, sua Designer de Interiores.
@@ -39,7 +44,7 @@
     </section>
 
     <!-- PROJETOS -->
-    <section id="projetos" class="projetos">
+    <section id="projetos" class="projetos espaçamentozinho">
         <h2 class="projetos-titulo">Meus Projetos</h2>
 
         <div class="projetos-caixa">
@@ -49,6 +54,7 @@
                 <div class="caixa-txt-projeto">
                     <h3 class="info-projetos">Cozinha Planejada</h3>
                     <p class="paragrafo-projetos">Cozinha planejada com design moderno e funcional.</p>
+                    <a class="botao-form" href="cozinha.html">Ver projeto</a>
                 </div>
             </div>
 
@@ -57,6 +63,7 @@
                 <div class="caixa-txt-projeto">
                     <h3 class="info-projetos">Sala de Estar</h3>
                     <p class="paragrafo-projetos">Sala de estar aconchegante com decoração contemporânea.</p>
+                    <a class="botao-form" href="sala_de_estar.html">Ver projeto</a>
                 </div>
             </div>
 
@@ -65,6 +72,7 @@
                 <div class="caixa-txt-projeto">
                     <h3 class="info-projetos">Quarto de Casal</h3>
                     <p class="paragrafo-projetos">Quarto de casal elegante com iluminação suave.</p>
+                    <a class="botao-form" href="quarto_de_casal.html">Ver projeto</a>
                 </div>
             </div>
 
@@ -72,23 +80,49 @@
     </section>
 
     <!-- CONTATO -->
-    <section id="contatos" class="contatos">
+    <section id="contatos" class="contatos espaçamentozinho">
         <h2 class="contatos-titulo">Entre em Contato</h2>
 
         <form class="formulario-contato" id="formulario">
             <input type="text" class="campo-form" placeholder="Digite seu nome">
             <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
-            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+            <a type="submit" class="botao-form" target="_blank" href="https://wa.me/5583988531672?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento!">Enviar WhatsApp</a>
         </form>
     </section>
 
     <!-- RODAPÉ -->
     <footer class="rodape">
-        <p>
-            Portfólio desenvolvido por Michael Melo e Maria Eduarda Sorrentino —
-            Estudantes de Sistemas para Internet da UNIESP.
-        </p>
+        <div class="rodape-contatos">
+            <div class="rodape-info">
+                <strong>Kamila Deysiane</strong> — Designer de Interiores
+            </div>
+            <div class="rodape-info">
+                 <a href="mailto:kamiladeysianedesigner@email.com">kamiladeysianedesigner@email.com</a>
+            </div>
+            <div class="rodape-info">
+                 <a href="tel:+5583988531672">(83) 98853-1672</a>
+            </div>
+            <div class="rodape-creditos">
+                Portfólio desenvolvido por <a href="https://www.instagram.com/dougs.m4/" class="link-dev">Michael Melo</a> e <a href="https://www.instagram.com/eduardasorrentinno/" class="link-dev">Eduarda Sorrentinno</a> —
+                Estudantes de Sistemas para Internet da UNIESP.
+            </div>
+        </div>
     </footer>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+
+    // Fechar o menu ao clicar em um link
+    document.querySelectorAll(".menu-link").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
+        });
+    });
+</script>
 
 </body>
 </html>

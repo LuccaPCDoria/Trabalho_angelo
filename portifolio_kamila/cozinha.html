@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Planejada — Kamila Deysiane</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="shortcut icon" href="img/logo-kamila.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navegacao">
+    <div class="menu-toggle" id="menuToggle" style="color: white;">
+        &#9776;
+    </div>
+
+    <ul class="menu" id="menu">
+        <li><a href="index.html" class="menu-link">Início</a></li>
+        <li><a href="index.html#sobre" class="menu-link">Sobre</a></li>
+        <li><a href="index.html#projetos" class="menu-link">Projetos</a></li>
+        <li><a href="index.html#contatos" class="menu-link">Contatos</a></li>
+    </ul>
+</nav>
+
+    <header class="cabecalho">
+        <div class="hero-wrap">
+            <img src="img/02.jpg" alt="Cozinha planejada moderna" class="hero-img">
+        </div>
+    </header>
+
+    <main class="projeto-container espaçamentozinho">
+        <div class="projeto-grid">
+            <section>
+                <h1>Cozinha Planejada</h1>
+                <p>Projeto de cozinha planejada com foco em funcionalidade e estética moderna. A composição apresenta uma ilha central que organiza a área de preparo e refeições rápidas, armários sem puxadores e acabamentos em madeira clara combinados com superfícies em laca fosca. A solução otimiza espaço e mantém um aspecto limpo e elegante.</p>
+
+                <p>O projeto prioriza a ergonomia com bancadas na altura correta, gavetas organizadoras e nichos para eletrodomésticos embutidos. A iluminação é em camadas: spots embutidos no teto para iluminação geral e pendentes sobre a ilha para destaque e atmosfera.</p>
+
+                <p>Materiais escolhidos garantem resistência e fácil manutenção, com detalhes em metal escovado para um toque contemporâneo. O resultado é uma cozinha prática, convidativa e visualmente equilibrada.</p>
+            </section>
+
+            <aside class="detalhes">
+                <h3>Informações rápidas</h3>
+                <ul>
+                    <li><strong>Estilo:</strong> Moderno</li>
+                    <li><strong>Elementos:</strong> Ilha central, armários planejados</li>
+                    <li><strong>Materiais:</strong> Madeira clara, quartzo</li>
+                    <li><strong>Área:</strong> Ex.: 12 m²</li>
+                </ul>
+                <a class="botao-form" href="https://wa.me/5583988531672?text=Olá,%20vi%20seu%20portfólio%20e%20gostaria%20de%20fazer%20um%20orçamento!">Solicitar orçamento</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-contatos">
+            <div class="rodape-info">
+                <strong>Kamila Deysiane</strong> — Designer de Interiores
+            </div>
+            <div class="rodape-info">
+                 <a href="mailto:kamiladeysianedesigner@email.com">kamiladeysianedesigner@email.com</a>
+            </div>
+            <div class="rodape-info">
+                 <a href="tel:+5583988531672">(83) 98853-1672</a>
+            </div>
+            <div class="rodape-creditos">
+                Portfólio – Kamila Deysiane
+            </div>
+        </div>
+    </footer>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+    });
+
+    // Fechar o menu ao clicar em um link
+    document.querySelectorAll(".menu-link").forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("show");
+        });
+    });
+</script>
+</body>
+</html>
