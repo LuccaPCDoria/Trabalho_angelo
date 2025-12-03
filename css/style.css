@@ -395,8 +395,6 @@ footer {
         padding-top: 90px;
     }
 }
-<<<<<<< HEAD
-=======
 .navbar {
     position: fixed;
     width: 100%;
@@ -406,5 +404,3 @@ footer {
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
-
->>>>>>> fd7a46a6b2aec87665a44f36535f8ace28cee4d2
