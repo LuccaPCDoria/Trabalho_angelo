@@ -218,3 +218,13 @@ git commit -m "Conflito resolvido"
 * Mantenha sua branch atualizada mesclando com a dev
 * Não faça PR para main — apenas para dev
 * Nunca faça merge por conta própria
+
+# Comandos para fazer o merge para main
+ Após fazer o `git push` faça os seguintes comandos
+
+```bash
+1° - git pull origin main
+2° - git checkout main
+3° - git merge sua_branch
+4° - git push -u origin main
+```
