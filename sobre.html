@@ -12,231 +12,6 @@
     <!-- CSS Externo -->
     <link rel="stylesheet" href="css/style.css">
      <link rel="shortcut icon" href="img/P1.svg" type="image/x-icon">
-
-    <style>
-        /* ------------------------------------------
-   PÁGINA SOBRE — ESTILO COMPLEMENTAR
-------------------------------------------- */
-
-        /* Seção principal */
-        .sobre-header {
-            text-align: center;
-            padding: 80px 20px;
-            max-width: 850px;
-            margin: 0 auto;
-        }
-
-        .sobre-header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #222;
-        }
-
-        .sobre-header p {
-            margin-top: 15px;
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        /* Título das áreas */
-        .sobre-titulo {
-            font-size: 2rem;
-            margin: 60px 0 20px;
-            font-weight: 700;
-            color: #222;
-        }
-
-        /* Lista de Integrantes */
-        .sobre-lista {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-
-        .sobre-lista li {
-            padding: 15px 18px;
-            margin-bottom: 12px;
-            background: #f8f8f8;
-            border-left: 4px solid #005eff;
-            border-radius: 8px;
-            font-size: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            transition: 0.2s ease-in-out;
-        }
-
-        .sobre-lista li:hover {
-            transform: translateX(6px);
-            background: #eef4ff;
-        }
-
-        .sobre-lista b {
-            color: #111;
-        }
-
-        /* Parágrafo final */
-        .sobre-final {
-            margin-top: 40px;
-            font-size: 1.05rem;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        /* Cards da equipe */
-        .sobre-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
-            margin-top: 50px;
-        }
-
-        .card-member {
-            background: white;
-            padding: 25px;
-            border-radius: 14px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-            text-align: center;
-            transition: 0.25s;
-        }
-
-        .card-member:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
-        }
-
-        .card-member h3 {
-            font-size: 1.3rem;
-            color: #111;
-            font-weight: 700;
-        }
-
-        .card-member p {
-            margin-top: 6px;
-            font-size: 0.95rem;
-            color: #555;
-        }
-
-        /* Imagem genérica da equipe */
-        .sobre-img {
-            width: 100%;
-            max-width: 640px;
-            margin: 40px auto;
-            display: block;
-            border-radius: 18px;
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Responsividade */
-        @media (max-width: 700px) {
-            .sobre-header h1 {
-                font-size: 2.2rem;
-            }
-
-            .sobre-titulo {
-                font-size: 1.6rem;
-            }
-
-            .card-member {
-                padding: 20px;
-            }
-        }
-
-        /* --------------------------- */
-/*     INTEGRANTES PREMIUM     */
-/*       (CARDS GORDINHOS)     */
-/* --------------------------- */
-
-.integrantes-section {
-    padding: 90px 20px;
-    background: linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
-}
-
-.section-title {
-    font-size: 3rem;
-    text-align: center;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1.15rem;
-    color: #666;
-    max-width: 720px;
-    margin: 0 auto 60px;
-}
-
-.integrantes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 45px;
-}
-
-.integrante-card {
-    background: #fff;
-    border-radius: 26px;
-    padding: 45px 30px;
-    min-height: 360px; /* AQUI OS CARDS FICAM MAIS GORDINHOS */
-    box-shadow:
-        0 12px 28px rgba(0,0,0,0.08),
-        0 4px 14px rgba(0,0,0,0.06);
-    text-align: center;
-    transition: 0.35s ease;
-    border: 1px solid #eee;
-}
-
-.integrante-card:hover {
-    transform: translateY(-10px);
-    box-shadow:
-        0 20px 40px rgba(0,0,0,0.12),
-        0 10px 20px rgba(0,0,0,0.08);
-    border-color: #ddd;
-}
-
-.integrante-img {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 25px;
-    background: linear-gradient(135deg, #f1f1f1, #e4e4e4);
-    border-radius: 50%;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
-
-.integrante-nome {
-    font-size: 1.45rem;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 6px;
-}
-
-.integrante-funcao {
-    font-size: 0.9rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffb500;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-}
-
-.integrante-bio {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    padding: 0 6px;
-}
-
-
-
-
-        .espaçamento {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-    </style>
 </head>
 
 <body>
@@ -248,8 +23,8 @@
 
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                 </ul>
             </nav>
@@ -273,10 +48,10 @@
     </section>
 
     <!-- SOBRE -->
-    <section class="container about-section reveal espaçamento">
+    <section class="container reveal espaçamento">
         <h2 class="section-title">Quem Somos</h2>
 
-        <p class="about-text">
+        <p>
             A equipe P1 UNIESP é formada por profissionais com habilidades complementares — designers, programadores,
             estrategistas e criadores de conteúdo. Nosso foco é transformar ideias em experiências digitais reais,
             funcionais e visualmente impactantes.
@@ -364,7 +139,7 @@
 
 
     <!-- MISSÃO -->
-    <section class="container mission-section reveal">
+    <section class="container reveal">
         <h2 class="section-title">Nossa Missão</h2>
 
         <p class="about-text">
